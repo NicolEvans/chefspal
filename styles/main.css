@@ -46,7 +46,31 @@ a {
 }
 
 .icon {
+  cursor: pointer;
+  display: inline-block;
   float: right;
+}
+
+.bar1, .bar2, .bar3 {
+  background-color: hsla(255, 100%, 100%, 1.0);
+  height: 2px;
+  margin: 6px 0;
+  transition: 0.4s;
+  width: 25px;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 3px);
+  transform: rotate(-45deg) translate(-9px, 3px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -2px);
+  transform: rotate(45deg) translate(-8px, -2px);
 }
 
 .ham {
@@ -58,15 +82,17 @@ a {
 }
 
 .ham-show {
-  background-color: hsla(0, 0%, 0%, 0.9);
+  background-color: hsla(0, 0%, 0%, 0.95);
   display: inline-block;
   height: auto;
   line-height: 200%;
   padding: .5em;
   position: absolute;
-  right: .5em;
-  top: 3.75em;
-  width: 6em;}
+  right: 1em;
+  top: 3.5em;
+  width: 6em;
+  z-index: 300;
+}
 
 .login-button {
   color: hsla(255, 100%, 100%, 1.0);
@@ -84,6 +110,7 @@ a {
   text-align: center;
 }
 
+/* body*/
 h1 {
   color: hsla(255, 100%, 100%, 1.0);
   font-size: 2em;
@@ -105,6 +132,7 @@ section {
   padding: 3em 0;
 }
 
+/* features */
 div.free {
   border-bottom: hsla(0, 0%, 85%, 1.0) solid .1em;
   padding: 3em 0;
@@ -142,6 +170,7 @@ img.video {
   width: 100%;
 }
 
+/* upgrades */
 h4 {
   color: hsla(206, 56%, 20%, 1.0);
   font-weight: 600;
@@ -174,6 +203,7 @@ h5 {
   font-size: 1.25em;
 }
 
+/* testimonials */
 section.testimonials {
   background: linear-gradient(180deg, hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 0%, 0.7)),
   url(../images/testimonials.jpeg);
@@ -203,6 +233,7 @@ img.testimonials {
   text-align: right;
 }
 
+/* sign up */
 .signup {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -288,6 +319,7 @@ input::placeholder {
   width: 14em;
 }
 
+/* footer */
 footer {
   background: hsla(206, 56%, 20%, 1.0);
   color: hsla(255, 100%, 100%, 1.0);

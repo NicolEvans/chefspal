@@ -26,13 +26,15 @@
         <ul id="topbar">
           <li class="logo"><img src="images/logo-mobile.png" class="logo-mobile" alt="Chef's Pal Logo"></li>
           <li class="ham-menu">
-            <a class="icon" onclick="hamburger()">
-            <!-- <i class="fa fa-bars"></i> --> x
-            </a>
+            <div class="icon" id="change-ham" onclick="hamburger()">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
             <div class="ham" id="myHam">
               <a href="#features">features</a>
               <a href="#upgrades"> upgrades</a>
-              <a href="#signup">signup</a>
+              <a href="#signup">sign up</a>
           </li>
           <li class="login-button">log in</li>
         </ul>
@@ -213,29 +215,32 @@
     </footer>
 
     <!-- Navigation scrolling -->
-<script>
-  var topBar = document.getElementById('topbar');
-  var didScroll = false;
-  window.onscroll = function() {navBar()};
-  function navBar() {
-    didScroll = true;
-  }
-  setInterval(function () {
-    if(didScroll) {
-      didScroll = false;
-      if (document.documentElement.scrollTop > 50 || document.body.scrollTop > 50) {
-        topBar.className = 'scrolled';
-      } else {
-        topBar.className = '';
+    <script>
+      var topBar = document.getElementById('topbar');
+      var didScroll = false;
+      window.onscroll = function() {navBar()};
+      function navBar() {
+        didScroll = true;
       }
-    }
-  }, 100);
+      setInterval(function () {
+        if(didScroll) {
+          didScroll = false;
+          if (document.documentElement.scrollTop > 50 || document.body.scrollTop > 50) {
+            topBar.className = 'scrolled';
+          } else {
+            topBar.className = '';
+          }
+        }
+      }, 100);
 
-  function hamburger() {
-    document.getElementById('myHam').classList.toggle('ham-show');
-  };
+      //hamburger menu
+      function hamburger() {
+        document.getElementById('myHam').classList.toggle('ham-show');
+        //animation
+        document.getElementById('change-ham').classList.toggle('change');
+      };
 
-</script>
+    </script>
 
   </body>
 </html>
