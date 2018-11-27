@@ -1,0 +1,356 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+header {
+  background: linear-gradient(180deg, hsla(0, 0%, 0%, 0.9), hsla(255, 100%, 100%, 0)),
+  url(../images/mobile-hero.png);
+  background-size: cover;
+  height: 90vh;
+  text-align: left;
+}
+
+#topbar {
+  border-bottom: 1px solid hsla(62, 94%, 21%, 1.0);
+  box-sizing: border-box;
+  position: fixed;
+  height: 3.75em;
+  padding: 1em;
+  width: 100%;
+  z-index: 200;
+}
+
+.scrolled {
+  background-color: hsla(0, 0%, 0%, 0.95);
+  position: fixed;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.logo-mobile {
+  width: 10em;
+}
+
+.logo {
+  float: left;
+  padding-top: .25em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.icon {
+  float: right;
+}
+
+.ham {
+  display: none;
+}
+
+.ham-menu a {
+  color: hsla(255, 100%, 100%, 1.0);
+}
+
+.ham-show {
+  background-color: hsla(0, 0%, 0%, 0.9);
+  display: inline-block;
+  height: auto;
+  line-height: 200%;
+  padding: .5em;
+  position: absolute;
+  right: .5em;
+  top: 3.75em;
+  width: 6em;}
+
+.login-button {
+  color: hsla(255, 100%, 100%, 1.0);
+  display: inline-block;
+  float: right;
+  font-size: .75em;
+  height: 2.25em;
+  margin-right: 1.25em;
+  padding: .35em;
+  width: 7em;
+
+  border: .12em solid hsla(62, 76%, 63%, 1.0);
+  box-sizing: border-box;
+  cursor: pointer;
+  text-align: center;
+}
+
+h1 {
+  color: hsla(255, 100%, 100%, 1.0);
+  font-size: 2em;
+  font-weight: bold;
+  padding-top: 35%;
+  padding-left: .5em;
+  padding-right: .5em;
+}
+
+h2 {
+  color: hsla(206, 56%, 20%, 1.0);
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0 2em;
+  text-align: center;
+}
+
+section {
+  padding: 3em 0;
+}
+
+div.free {
+  border-bottom: hsla(0, 0%, 85%, 1.0) solid .1em;
+  padding: 3em 0;
+  margin: 0 3em;
+  text-align: center;
+}
+
+img.free {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  width: 2.5em;
+}
+
+h3 {
+  color: hsla(206, 56%, 20%, 1.0);
+  font-family: "Oswald", sans-serif;
+  font-size: 1.25em;
+  padding: 1.25em 0;
+  text-transform: uppercase;
+}
+
+p {
+  padding: .25em 0;
+}
+
+.work {
+  padding: 3em 0;
+  margin: 0 3em;
+  text-align: center;
+}
+
+img.video {
+  margin: 0 auto;
+  width: 100%;
+}
+
+h4 {
+  color: hsla(206, 56%, 20%, 1.0);
+  font-weight: 600;
+  margin: 3em 2em 1em 2em;
+  padding: .5em 0 4em 0;
+  text-align: center;
+}
+
+.twocolumn {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-column-gap: 15px;
+  padding: 0 16px 0 16px;
+}
+
+.upgrade-text {
+  grid-column-start: 2;
+  padding-bottom: 3.5em;
+}
+
+.upgrade {
+  filter: drop-shadow(.05em .05em .25em hsla(0, 0%, 0%, 0.7));
+  height: 60px;
+  padding: 0;
+  width: 60px;
+}
+
+h5 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.25em;
+}
+
+section.testimonials {
+  background: linear-gradient(180deg, hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 0%, 0.7)),
+  url(../images/testimonials.jpeg);
+  padding: 3em 0 1em 0;
+}
+
+h2.testimonials {
+  color: hsla(62, 76%, 63%, 1.0);
+  padding-bottom: 1em;
+}
+
+div.testimonials {
+  color: hsla(255, 100%, 100%, 1.0);
+  margin: 2em;
+  padding: 1em 0;
+}
+
+img.testimonials {
+  display: block;
+  height: auto;
+  margin: auto;
+  padding-bottom: .5em;
+  width: 74px;
+}
+
+.name {
+  text-align: right;
+}
+
+.signup {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-column-gap: 16px;
+  grid-template-rows: repeat(5, auto);
+  margin: 2em .75em;
+}
+
+.google {
+  border: .1em solid hsla(0, 0%, 70%, 1.0);
+  box-sizing: border-box;
+  display: inline-flex;
+  grid-column: 1 / span 4;
+}
+
+.g-logo {
+  height: 1.5em;
+  width: 1.5em;
+  padding: .2em .5em;
+}
+
+.sign-btn {
+  font-size: .75em;
+  padding-top: .75em;
+}
+
+.fb {
+  border: .1em solid hsla(0, 0%, 70%, 1.0);
+  box-sizing: border-box;
+  display: inline-flex;
+  grid-column: 5 / span 4;
+}
+
+.fb-logo {
+  height: 1.5em;
+  width: .9em;
+  padding: .2em .5em;
+}
+
+input {
+  font-family: "Raleway", sans-serif;
+  font-size: .75em;
+  letter-spacing: .05em;
+  padding-bottom: .25em;
+}
+
+input[type="text"], [type="email"], [type="password"] {
+  border: none;
+  border-bottom: .1em solid hsla(0, 0%, 60%, 1.0);
+}
+
+.sign-form {
+  line-height: 300%;
+    margin: 2em .75em 0 .75em;
+}
+
+.first-name {
+  width: 46%;
+  margin-right: 1.25em;
+}
+
+.last-name {
+  width: 46%;
+}
+
+.email, .password {
+  width: 100%;
+}
+
+input::placeholder {
+  font-weight: 500;
+}
+
+.submit-btn {
+  background: none;
+  border: .2em solid hsla(62, 94%, 21%, 1.0);
+  color: hsla(62, 94%, 21%, 1.0);
+  display: block;
+  font-weight: 600;
+  height: 2.5em;
+  margin: 2em auto 0 auto;
+  padding-top: .25em;
+  width: 14em;
+}
+
+footer {
+  background: hsla(206, 56%, 20%, 1.0);
+  color: hsla(255, 100%, 100%, 1.0);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1em;
+  grid-template-rows: repeat(5, auto);
+  font-size: .75em;
+  line-height: 200%;
+  padding: 1em .75em;
+}
+
+ul.footer {
+  margin-bottom: 2em;
+}
+
+li.footer {
+  border: .1em solid hsla(255, 100%, 100%, 1.0);
+  border-radius: 50%;
+  display: inline;
+  font-size: 1.15em;
+  margin: .75em;
+}
+
+.pinterest {
+  padding: .4em .4em .4em .7em;
+}
+
+.instagram {
+  padding: .4em .4em .4em .6em;
+}
+
+.facebook {
+  padding: .4em .55em .4em .75em;
+}
+
+.twitter {
+  padding: .4em .5em .4em .6em;
+}
+
+.left {
+  grid-column-start: 1;
+}
+
+.middle {
+  grid-column: 1 / -1;
+  margin: .5em 0;
+  text-align: center;
+}
+
+.right {
+  grid-column-start: 3;
+  text-align: right;
+}
+
+.r-one {
+  grid-row-start: 3;
+}
+
+.r-two {
+  grid-row-start: 4;
+}
+
+.r-three {
+  grid-row-start: 5;
+}
