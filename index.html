@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
     <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700|Oswald:medium">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700|Oswald:medium">
 
 
   </head>
@@ -24,7 +24,10 @@
     <header>
       <nav>
         <ul id="topbar">
-          <li class="logo"><img src="images/logo-mobile.png" class="logo-mobile" alt="Chef's Pal Logo"></li>
+          <li class="logo">
+            <img src="images/logo-mobile.png" class="logo-mobile" alt="Chef's Pal Logo">
+            <img src="images/logo-desktop.png" class="logo-desktop" alt="Chef's Pal Logo">
+          </li>
           <li class="ham-menu">
             <div class="icon" id="change-ham" onclick="hamburger()">
               <div class="bar1"></div>
@@ -49,28 +52,30 @@
       <section>
         <article>
           <h2>Use these features for free</h2>
-            <div class="free">
-              <img src="images/save.png" class="free" alt="save icon">
-              <h3>Save</h3>
-              <p>Use the browser extension to save any online recipe in English</p>
-            </div>
+            <div class="features">
+              <div class="free">
+                <img src="images/save.png" class="free" alt="save icon">
+                <h3>Save</h3>
+                <p>Use the browser extension to save any online recipe in English</p>
+              </div>
 
-            <div class="free">
-              <img src="images/notate.png" class="free" alt="notate icon">
-              <h3>Notate</h3>
-              <p>Remember changes you made to the recipe by adding notes</p>
-            </div>
+              <div class="free">
+                <img src="images/notate.png" class="free" alt="notate icon">
+                <h3>Notate</h3>
+                <p>Remember changes you made to the recipe by adding notes</p>
+              </div>
 
-            <div class="free">
-              <img src="images/organize.png" class="free" alt="organize icon">
-              <h3>Organize</h3>
-              <p>Catalogue your collection with custom tags</p>
-            </div>
+              <div class="free">
+                <img src="images/organize.png" class="work" alt="organize icon">
+                <h3>Organize</h3>
+                <p>Catalogue your collection with custom tags</p>
+              </div>
 
-            <div class="work">
-              <img src="images/work.png" class="free" alt="work icon">
-              <h3>Work</h3>
-              <p>Easily switch between recipes and keep your screen awake while cooking</p>
+              <div class="work">
+                <img src="images/work.png" class="work" alt="work icon">
+                <h3>Work</h3>
+                <p>Easily switch between recipes and keep your screen awake while cooking</p>
+              </div>
             </div>
         </article>
 
@@ -81,90 +86,96 @@
 
 <!-- Upgrades -->
       <a name="upgrades"/>
-      <section>
-        <h2>Don't pay for features you won't use</h2>
-        <h4>
+      <section class="upgrades">
+        <h2 class="upgrades">Don't pay for features you won't use</h2>
+        <h4 class="upgrades">
           Mix and match to create the perfect app tailored to your specific needs.
           Sign up and try all features for free for 14 days.
           No credit card required.
         </h4>
 
-        <div class="twocolumn">
-          <img src="images/nutrition.png" alt="nutrition icon" class="upgrade">
-          <div class="upgrade-text">
-            <h5>Nutrition Analyzer</h5>
-            <p>$1</p>
-            <p>
-              Get the nutrition information for recipes that don’t already include it
-            </p>
+          <div class="twocolumn upgrades">
+            <img src="images/nutrition.png" alt="nutrition icon" class="upgrade nutrition">
+            <div class="nutrition upgrade-text">
+              <h5>Nutrition Analyzer</h5>
+              <p>$1</p>
+              <p>
+                Get the nutrition information for recipes that don’t already include it
+              </p>
+            </div>
+
+            <img src="images/unlimited.png" alt="unlimited storage icon" class="upgrade unlimited">
+            <div class="upgrade-text unlimited">
+              <h5>Unlimited Storage</h5>
+              <p>$1 per month</p>
+              <p>
+                Start with 2 GB of space, then keep adding to your recipe collection with unlimited storage
+             </p>
+           </div>
+
+            <img src="images/auto-org.png" alt="automatic organization icon" class="upgrade auto-org">
+            <div class="upgrade-text auto-org">
+              <h5>Automatic Organization</h5>
+              <p>$1</p>
+              <p>
+                Organizing tags are automatically created for you based on the ingredients and keywords in the recipe
+             </p>
+           </div>
+
+            <img src="images/ocr.png" alt="optical character recognition icon" class="upgrade ocr">
+            <div class="upgrade-text ocr">
+              <h5>Optical Character Recognition</h5>
+              <p>$5</p>
+              <p>
+                Digitize recipes from cookbooks or handwritten recipe cards so your collection is in one easy-to-get-to place
+             </p>
+           </div>
+
+           <img src="images/voice.png" alt="voice control icon" class="upgrade voice">
+            <div class="upgrade-text voice">
+              <h5>Voice Control</h5>
+              <p>$5</p>
+              <p>
+                Sync Chef’s Pal to your smart home assistant for a hands free experience.
+                Your device will talk you through the recipe so you’re not touching your electronics with food-covered hands
+              </p>
+             </div>
+            <img src="images/apron.png" alt="apron logomark for chef's pal" class="apron">
+            <div class="pentagon"></div>
+            <div class="inner"></div>
           </div>
 
-          <img src="images/unlimited.png" alt="unlimited storage icon" class="upgrade">
-          <div class="upgrade-text">
-            <h5>Unlimited Storage</h5>
-            <p>$1 per month</p>
-            <p>
-              Start with 2 GB of space, then keep adding to your recipe collection with unlimited storage
-           </p>
-         </div>
-
-          <img src="images/auto-org.png" alt="automatic organization icon" class="upgrade">
-          <div class="upgrade-text">
-            <h5>Automatic Organization</h5>
-            <p>$1</p>
-            <p>
-              Organzing tags are automatically created for you based on the ingredients and keywords in the recipe
-           </p>
-         </div>
-
-          <img src="images/ocr.png" alt="optical character recognition icon" class="upgrade">
-          <div class="upgrade-text">
-            <h5>Optical Character Recognition</h5>
-            <p>$5</p>
-            <p>
-              Digitize recipes from cookbooks or handwritten recipe cards so your collection is in one easy-to-get-to place
-           </p>
-         </div>
-
-          <img src="images/voice.png" alt="voice control icon" class="upgrade">
-          <div class="upgrade-text">
-            <h5>Voice Control</h5>
-            <p>$5</p>
-            <p>
-              Sync Chef’s Pal to your smart home assistant for a hands free experience.
-              Your device will talk you through the recipe so you’re not touching your electronics with food-covered hands
-           </p>
-         </div>
-        </div>
       </section>
 
 <!-- Testimonials -->
       <section class="testimonials">
         <h2 class="testimonials">See what other users are saying</h2>
 
-        <div class="testimonials">
-          <img src="images/jimmy.png" alt="headshot of Jimmy" class="testimonials">
-          <p>&ldquo; Chef’s Pal is simple,  just what I needed. &rdquo;</p>
-          <p class="name">- Jimmy D.</p>
-        </div>
+        <article class="testimonials">
+          <div class="testimonials">
+            <img src="images/jimmy.png" alt="headshot of Jimmy" class="testimonials">
+            <p>&ldquo; Chef’s Pal is simple,  just what I needed. &rdquo;</p>
+            <p class="name">- Jimmy D.</p>
+          </div>
 
-        <div class="testimonials">
-          <img src="images/leslie.png" alt="headshot of Leslie" class="testimonials">
-          <p>&ldquo; All of my printed and handwritten recipes are at my fingertips and I can follow them on any device in the kitchen. So easy! &rdquo;</p>
-          <p class="name">- Leslie H.</p>
-        </div>
+          <div class="testimonials">
+            <img src="images/leslie.png" alt="headshot of Leslie" class="testimonials">
+            <p>&ldquo; All of my printed and handwritten recipes are at my fingertips and I can follow them on any device in the kitchen. So easy! &rdquo;</p>
+            <p class="name">- Leslie H.</p>
+          </div>
 
-        <div class="testimonials">
-          <img src="images/marla.png" alt="headshot of Marla" class="testimonials">
-          <p>&ldquo; I was able to create my perfect app with the custom upgrades. &rdquo;</p>
-          <p class="name">- Marla K.</p>
-        </div>
+          <div class="testimonials">
+            <img src="images/marla.png" alt="headshot of Marla" class="testimonials">
+            <p>&ldquo; I was able to create my perfect app with the custom upgrades. &rdquo;</p>
+            <p class="name">- Marla K.</p>
+          </div>
+        </article>
       </section>
 
 <!-- Sign up -->
       <a name="signup"/>
-      <section>
-        <h2>Sign up for your free trial today</h2>
+      <section class="signup">
+        <h2 class="signup">Sign up for your free trial today</h2>
         <div class="signup">
           <div class="google">
             <img src="images/google-btn.png" alt="Google G Logo" class="g-logo">
