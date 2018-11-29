@@ -177,9 +177,12 @@ div.border-1 {
   display: none;
 }
 
-img.video {
+article.video {
   box-sizing: border-box;
-  margin: 0 auto;
+  background: url(../images/video.png);
+  background-size: cover;
+  background-position: 50% 40%;
+  height: 15rem;
   width: 100%;
 }
 
@@ -458,6 +461,18 @@ li.footer {
     margin: 2em auto;
   }
 
+  article.video {
+    transform: scale(1);
+    height: 17em;
+    margin-top: 2em;
+  }
+
+  /* upgrades */
+  section.upgrades {
+    margin: auto;
+    width: 75%;
+  }
+
   /* testimonials */
   section.testimonials {
     padding: 3em 0;
@@ -507,6 +522,7 @@ li.footer {
   .logo-desktop {
     display: block;
     height: auto;
+    padding-left: 1.5em;
     width: 12em;
   }
 
@@ -552,7 +568,7 @@ li.footer {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: center;
   }
 
   div.save, div.organize, div.notate, div.work {
@@ -578,15 +594,19 @@ li.footer {
     display: none;
   }
 
+  article.video {
+    height: 24em;
+  }
+
 /* upgrades */
   section.upgrades {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-column-gap: 20px;
     grid-template-rows: auto auto auto;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-top: 0;
+    box-sizing: border-box;
+    padding: 2em 50px 0;
+    width: 100%;
   }
 
   h2.upgrades {
