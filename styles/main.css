@@ -899,3 +899,23 @@ li.footer {
   .submit-btn {
     border-width: .15em;
   }
+
+  h6.middle {
+    grid-row: 1 / span 2;
+  }
+
+  ul.middle {
+    grid-row: 3 / span 3;
+  }
+
+  .r-one {
+    grid-row-start: 2;
+  }
+
+  .r-two {
+    grid-row-start: 3;
+  }
+
+  .r-three {
+    grid-row-start: 4;
+  }
