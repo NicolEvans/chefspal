@@ -521,6 +521,46 @@ li.footer {
 
 
 @media screen and (min-width: 575px) {
+  /* nav */
+  #topbar {
+    height: 4em;
+    padding: .75em 1.5em;
+  }
+
+  .logo-mobile {
+    display: none;
+  }
+
+  .logo-desktop {
+    display: block;
+    height: auto;
+    width: 13em;
+  }
+
+  li.login-button {
+    margin-top: .75em;
+    width: 10em;
+  }
+
+  div.icon {
+    padding: .5em .75em 0;
+  }
+
+ /*login modal*/
+ .login-background {
+   width: 75%;
+ }
+
+ form.login {
+   display: block;
+   margin: auto;
+   width: 75%;
+ }
+
+ input.login-email, input.login-password {
+   font-size: .85em;
+ }
+
   /* features */
   .features {
     display: grid;
@@ -600,20 +640,14 @@ li.footer {
     url(../images/desktop-hero.png);
     background-size: cover;
     background-position: 60% 0%;
-    height: 90vh;
+    height: 100vh;
     }
 
   #topbar {
     padding: .5em;
   }
 
-  .logo-mobile {
-    display: none;
-  }
-
   .logo-desktop {
-    display: block;
-    height: auto;
     padding-left: 1.5em;
     width: 12em;
   }
@@ -643,6 +677,20 @@ li.footer {
     position: relative;
     right: -20em;
     width: 10em;
+  }
+
+  /* login modal*/
+  .login-background {
+    width: 50%;
+  }
+
+  .login-apron {
+    width: 60px;
+  }
+
+  .login-btn {
+    border: .15em  solid hsla(62, 94%, 21%, 1.0);
+    font-size: .75em;
   }
 
   /* body */
