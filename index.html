@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
     <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700|Oswald:medium">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700|Oswald:regular,medium">
   </head>
 
   <body>
@@ -37,11 +37,31 @@
               <a href="#upgrades"> upgrades</a>
               <a href="#signup">sign up</a>
           </li>
-          <li class="login-button">log in</li>
+          <li id="login" class="login-button">log in</li>
         </ul>
       </nav>
 
+      <!-- login modal -->
+            <div id="login-modal" class="login">
+              <div class="login-background">
+                <div class="blue-back">
+                </div>
+                <div id="close" class="close">&times;</div>
+                <h3 class="modal-heading">Log In</h3>
+                <div class="login-content">
+                  <img src="images/apron.png" alt="Chef's Pal Apron Logomark" class="login-apron">
+                  <form action="/login" method="POST" class="login">
+                    <input type="email" name="email" placeholder="email address" class="login-email"/>
+                    <input type="password" name="password" placeholder="password"/ class="login-password">
+                    <input type="submit" name="submit" value="log in"class="login-btn"/>
+                  </form>
+                  <p class="forgot">forgot password?</p>
+                </div>
+              </div>
+            </div>
+
       <h1>There's a better way to manage and cook with your digital recipes</h1>
+
     </header>
 
     <main>
@@ -247,14 +267,36 @@
           }
         }
       }, 100);
+    </script>
 
-      //hamburger menu
+    <!-- hamburger menu -->
+    <script>
       function hamburger() {
         document.getElementById('myHam').classList.toggle('ham-show');
         //animation
         document.getElementById('change-ham').classList.toggle('change');
       };
+    </script>
 
+    <!-- login modal -->
+    <script>
+      var login = document.getElementById('login-modal');
+      var btn = document.getElementById('login');
+      var close = document.getElementById('close');
+
+      btn.onclick = function()  {
+        login.style.display = 'block';
+      }
+
+      close.onclick = function() {
+        login.style.display = 'none';
+      }
+
+      window.onclick = function(event) {
+        if (event.target === login) {
+          login.style.display = 'none';
+        }
+      }
     </script>
 
   </body>
