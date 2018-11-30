@@ -166,6 +166,11 @@ h3.modal-heading {
   width: 45px;
 }
 
+.login-content input::placeholder {
+  font-family: "oswald";
+  font-weight: 500;
+}
+
 .close {
   color: hsla(255, 100%, 100%, 1.0);
   cursor: pointer;
@@ -184,16 +189,18 @@ input.login-email, input.login-password {
   width: 100%;
 }
 
-.login-btn {
+div.login-btn {
   background: none;
-  border: .2em solid hsla(62, 94%, 21%, 1.0);
+  border: .15em solid hsla(62, 94%, 21%, 1.0);
   color: hsla(62, 94%, 21%, 1.0);
   cursor: pointer;
   display: block;
+  font-size: .7em;
   font-weight: 600;
-  height: 2.5em;
+  height: auto;
   margin: 2em auto 0 auto;
-  padding-top: .25em;
+  padding: .25em;
+  text-align: center;
   width: 14em;
 }
 
@@ -404,6 +411,11 @@ input[type="text"], [type="email"], [type="password"] {
   border-bottom: .1em solid hsla(0, 0%, 60%, 1.0);
 }
 
+input::placeholder {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
 .sign-form {
   line-height: 300%;
     margin: 2em .75em 0 .75em;
@@ -420,11 +432,6 @@ input[type="text"], [type="email"], [type="password"] {
 
 .email, .password {
   width: 100%;
-}
-
-input::placeholder {
-  font-family: "oswald";
-  font-weight: 500;
 }
 
 .submit-btn {

@@ -1,0 +1,151 @@
+header {
+  background: none;
+  height: 7em;
+}
+
+nav {
+  background-color: hsla(255, 100%, 100%, 1.0);
+  position: fixed;
+  width: 100%;
+  z-index: 300;
+}
+
+ul.toptop {
+  box-sizing: border-box;
+  border-bottom: .02em solid hsla(62, 94%, 21%, 1.0);
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  padding: .5em .75em;
+}
+
+li.logo {
+  grid-column: 1 /span 2;
+}
+
+img.logo {
+  width: 40px;
+}
+
+li.search {
+  grid-column: 4 / span 3;
+}
+
+.toptop input[type=text] {
+  border: .1em solid hsla(0, 0%, 60%, 1.0);
+  border-radius: 2em;
+  margin-top: .75em;
+  padding: .5em 1em;
+}
+
+li.account {
+  grid-column-start: 8;
+}
+
+img.account {
+  float: right;
+  padding-top: .65em;
+  width: 1.25em;
+}
+
+ul.topbottom {
+  border-bottom: .02em solid hsla(62, 94%, 21%, 1.0);
+  color: hsla(206, 56%, 20%, 1.0);
+  font-family: "Oswald", sans-serif;
+  letter-spacing: .1em;
+  padding: 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+li.topbottom {
+  display: inline;
+  padding: 0 1em;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 1em;
+}
+
+article {
+  background-size: cover;
+  background-position: center;
+  margin: .75em;
+  height: 20rem;
+  position: relative;
+  width: 10rem;
+}
+
+article div  {
+  background-color: hsla(255, 100%, 100%, 0.85);
+  bottom: 0;
+  box-sizing: border-box;
+  height: 5.75em;
+  padding: .75em .5em .5em .5em;
+  position: absolute;
+  width: 100%;
+}
+
+article h5 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  max-height: 2.5em;
+  overflow: hidden;
+  margin-bottom: .5em;
+}
+
+article p {
+  font-size: .75em;
+}
+
+.shakshuka {
+  background-image: url(../images/recipes/shakshuka.jpeg);
+}
+
+.buffalo-chix {
+  background-image: url(../images/recipes/buffalo-chicken-lettuce-wraps.jpeg);
+}
+
+.beef-mushroom {
+  background-image: url(../images/recipes/beef-mushroom-ragu-spaghetti-squash.jpeg)
+}
+
+.avocado-pea {
+  background-image: url(../images/recipes/avocado-pea-salmon-tartines.jpeg);
+}
+
+.chicken-escarole {
+  background-image: url(../images/recipes/chicken-escarole.jpeg);
+}
+
+.chicken-piccata {
+  background-image: url(../images/recipes/chicken-piccata.jpeg);
+}
+
+.chicken-marsala-balls {
+  background-image: url(../images/recipes/chicken-marsala-meatballs.jpeg);
+}
+
+.sesame-chicken {
+  background-image: url(../images/recipes/sesame-honey-chicken.jpeg);
+}
+
+.sangria {
+  background-image: url(../images/recipes/sangria.jpeg);
+}
+
+.duck-confit {
+  background-image: url(../images/recipes/duck-confit.jpeg);
+}
+
+.danske-lagekage {
+  background-image: url(../images/recipes/dansk-lagekage.jpeg);
+}
+
+.cranberry-tart {
+  background-image: url(../images/recipes/cranberry-tart.jpeg);
+}

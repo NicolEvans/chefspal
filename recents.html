@@ -9,6 +9,7 @@
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/recents.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
@@ -21,21 +22,21 @@
   <body>
     <header>
       <nav>
-        <ul>
+        <ul class="toptop">
           <li>
-            <img src="images/apron.png" alt="Chef's Pal Apron Logomark">
+            <img src="images/apron.png" alt="Chef's Pal Apron Logomark" class="logo">
           </li>
-          <li>
-            <!-- search bar -->
+          <li class="search">
+            <input type="text" placeholder="search...">
           </li>
-          <li>
-            <img src="images/account.png">
+          <li class="account">
+            <img src="images/account.png" class="account">
           </li>
         </ul>
-        <ul>
-          <li>Recents</li>
-          <li>Workspace</li>
-          <li>Tags</li>
+        <ul class="topbottom">
+          <li class="topbottom">Recents</li>
+          <li class="topbottom">Workspace</li>
+          <li class="topbottom">Tags</li>
         </ul>
       </nav>
     </header>
@@ -43,24 +44,21 @@
     <main>
       <section>
 
-        <article>
-          <img src="images/recipes/shakshuka.jpeg" alt="Shakshuka">
+        <article class="shakshuka">
           <div>
             <h5>Shakshuka</h5>
             <p>viewed 8.29.18</p>
           </div>
         </article>
 
-        <article>
-          <img src="images/recipes/buffalo-chicken-lettuce-wraps.jpeg" alt="Buffalo Chicken Lettuce Wraps">
+        <article class="buffalo-chix">
           <div>
             <h5>Buffalo Chicken Lettuce Wraps</h5>
             <p>viewed 8.28.18</p>
           </div>
         </article>
 
-        <article>
-          <img src="images/recipes/beef-mushroom-ragu-spaghetti-squash.jpeg" alt="Beef and Mushroom Ragu wth Spaghetti Squash">
+        <article class="beef-mushroom">
           <div>
             <h5>Beef and Mushroom Ragu with Spaghetti Squash</h5>
             <p>prepared 8.25.18</p>
@@ -68,72 +66,63 @@
           </div>
         </article>
 
-        <article>
-          <img src="images/recipes/avocado-pea-salmon-tartines.jpeg" alt="Avocado Pea Salmon Tartines">
+        <article class="avocado-pea">
           <div>
             <h5>Avocado and Pea Salmon Tartines</h5>
             <p>added 8.22.18</p>
           </div>
         </article>
 
-        <article>
-          <img src="images/recipes/chicken-escarole.jpeg" alt="Chicken with Escarole and Pecorino">
+        <article class="chicken-escarole">
           <div>
             <h5>Skillet Chicken with Escarole and Pecorino</h5>
             <p>viewed 8.2.18</p>
           </div>
         </article>
 
-        <article>
-          <img src="images/recipes/chicken-piccata.jpeg" alt="Chicken Piccata">
+        <article class="chicken-piccata">
           <div>
             <h5>Chicken Piccata</h5>
             <p>prepared 7.16.18</p>
           </div>
         </article>
 
-        <article>
-          <img src="images/recipes/chicken-marsala-meatballs.jpeg" alt="Chicken Marsala Meatballs">
+        <article class="chicken-marsala-balls">
           <div>
             <h5>Chicken Marsala Meatballs</h5>
             <p>viewed 7.16.18</p>
           </div>
         </article>
 
-        <article>
-          <img src="images/recipes/sesame-honey-chicken.jpeg" alt="Honey Sesame Chicken">
+        <article class="sesame-chicken">
           <div>
             <h5>Honey Sesame Chicken</h5>
             <p>added 7.16.18</p>
           </div>
         </article>
 
-        <article>
-          <img src="images/recipes/sangria.jpeg" alt="Ginger Cardamom Red Wine Sangria">
+        <article class="sangria">
           <div>
             <h5>Ginger Cardamom Red Wine Sangria</h5>
             <p>prepared 7.4.18</p>
           </div>
         </article>
 
-        <article>
-          <img src="images/recipes/duck-confit.jpeg" alt="Duck Confit">
+        <article class="duck-confit">
           <div>
             <h5>Sous Vide Duck Confit</h5>
             <p>viewed 6.20.18</p>
           </div>
         </article>
 
-        <article>
-          <img src="images/recipes/dansk-lagekage.jpeg" alt="Danske Lagekage">
+        <article class="danske-lagekage">
           <div>
             <h5>Danske Lagekage</h5>
             <p>viewed 6.2.18</p>
           </div>
         </article>
 
-        <article>
-          <img src="images/recipes/cranberry-tart.jpeg" alt="Almond Frangipane Tart with Cranberries and Honeyed Pistachios">
+        <article class="cranberry-tart">
           <div>
             <h5>Almond Frangipane Tart with Cranberries and Honeyed Pistachios</h5>
             <p>prepared 5.31.18</p>
