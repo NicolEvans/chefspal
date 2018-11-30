@@ -18,23 +18,27 @@ ul.toptop {
   padding: .5em .75em;
 }
 
-li.logo {
-  grid-column: 1 /span 2;
+.full-logo {
+  display: none;
 }
 
-img.logo {
+img.logomark {
   width: 40px;
 }
 
 li.search {
-  grid-column: 4 / span 3;
-}
-
-.toptop input[type=text] {
+  grid-column: 5 / span 3;
   border: .1em solid hsla(0, 0%, 60%, 1.0);
   border-radius: 2em;
-  margin-top: .75em;
-  padding: .5em 1em;
+  height: 1.5em;
+  margin: .5em 0;
+  width: auto;
+}
+
+p.search {
+  color: hsla(0, 0%, 40%, 1.0);
+  font-size: .75em;
+  padding: .45em 1em;
 }
 
 li.account {
@@ -158,4 +162,52 @@ article p {
 
 .cranberry-tart {
   background-image: url(../images/recipes/cranberry-tart.jpeg);
+}
+
+@media screen and (min-width: 575px) {
+  /* Navigation */
+  ul.toptop {
+    grid-template-columns: repeat(13, 1fr);
+    padding: .5em 2em;
+  }
+
+  li.logo {
+    grid-column: 1 /  4;
+  }
+
+  .logomark {
+    display: none;
+  }
+
+  img.full-logo {
+    display: inline-block;
+    width: 13em;
+  }
+
+  li.search {
+    grid-column: 9 /span 5;
+    margin-right: 2em;
+  }
+
+  li.account {
+    grid-column-start: 15;
+  }
+
+  /* recipe cards */
+  article {
+    margin: 1.5em;
+    width: 15em;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  li.search {
+    border: .07em solid hsla(0, 0%, 60%, 1.0);
+  }
+
+/* recipe cards */
+  article {
+    height: 25em;
+    margin: 2.75em;
+  }
 }
