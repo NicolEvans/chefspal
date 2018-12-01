@@ -30,9 +30,16 @@
           <li class="search">
             <p class="search">search...<p>
           </li>
-          <li class="account">
-            <img src="images/account.png" class="account">
-          </li>
+          <div class="account-dropdown">
+            <li onclick="accountDrop()" class="account">
+              <img src="images/account.png" class="account dropbtn">
+            </li>
+            <div id="dropAccount" class="account-content">
+              <h5 id="settings" class="dropdown">Settings</h5>
+              <a href="" class="dropdown">My Features</a>
+              <a href="index.html" class="dropdown">Log Out</a>
+            </div>
+          </div>
         </ul>
         <ul class="topbottom">
           <li class="topbottom">
@@ -159,7 +166,12 @@
       <h6 class="right r-three">terms &amp; conditions</h6>
     </footer>
 
+    <!-- underline under current menu page -->
     <script src="scripts/current.js"></script>
+
+    <!-- account dropdown -->
+    <script src="scripts/account-drop.js"></script>
+
 
 
   </body>

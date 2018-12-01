@@ -41,14 +41,42 @@ p.search {
   padding: .45em 1em;
 }
 
-li.account {
+div.account-dropdown {
+  display: inline-block;
   grid-column-start: 8;
+  position: relative;
 }
 
 img.account {
   float: right;
   padding-top: .65em;
   width: 1.25em;
+}
+
+.account-content {
+  background-color: hsla(255, 100%, 100%, 1.0);
+  border: .2em solid hsla(206, 56%, 20%, 1.0);
+  display: none;
+  height: auto;
+  min-width: 6em;
+  margin: 2.5em 0 0 -7em;
+  padding: 1em 1.5em;
+  position: absolute;
+  z-index: 600;
+}
+
+.dropdown {
+  color: hsla(206, 56%, 20%, 1.0);
+  display: inline-block;
+  font-family: "Oswald", sans-serif;
+  font-size: 1em;
+  letter-spacing: .1em;
+  line-height: 250%;
+  text-transform: uppercase;
+}
+
+.show {
+  display: block;
 }
 
 ul.topbottom {
@@ -189,8 +217,13 @@ article p {
     margin-right: 2em;
   }
 
-  li.account {
+  div.account-dropdown {
     grid-column-start: 15;
+  }
+
+  .account-content {
+    min-width: 7em;
+    margin-left: -9em;
   }
 
   /* recipe cards */
