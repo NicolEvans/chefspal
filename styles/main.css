@@ -373,6 +373,7 @@ div.signup {
   box-sizing: border-box;
   display: inline-flex;
   grid-column: 1 / span 4;
+  justify-content: center;
 }
 
 .g-logo {
@@ -391,6 +392,7 @@ div.signup {
   box-sizing: border-box;
   display: inline-flex;
   grid-column: 5 / span 4;
+  justify-content: center;
 }
 
 .fb-logo {
@@ -634,6 +636,11 @@ li.footer {
   section.signup {
     width: 65%;
     margin: auto;
+  }
+
+  .submit-btn {
+    font-size: .75em;
+    width: 20em;
   }
 }
 
@@ -905,8 +912,11 @@ li.footer {
 
   .submit-btn {
     border-width: .15em;
+    font-size: .75em;
+    width: 20em;
   }
 
+/* footer */
   h6.middle {
     grid-row: 1 / span 2;
   }
