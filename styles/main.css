@@ -45,6 +45,7 @@ ul {
 }
 
 a {
+  cursor: pointer;
   text-decoration: none;
 }
 
@@ -371,6 +372,7 @@ div.signup {
 .google {
   border: .1em solid hsla(0, 0%, 70%, 1.0);
   box-sizing: border-box;
+  color: hsla(0, 0%, 0%, 1.0);
   display: inline-flex;
   grid-column: 1 / span 4;
   justify-content: center;
@@ -390,6 +392,7 @@ div.signup {
 .fb {
   border: .1em solid hsla(0, 0%, 70%, 1.0);
   box-sizing: border-box;
+  color: hsla(0, 0%, 0%, 1.0);
   display: inline-flex;
   grid-column: 5 / span 4;
   justify-content: center;
@@ -440,6 +443,7 @@ input::placeholder {
   background: none;
   border: .2em solid hsla(62, 94%, 21%, 1.0);
   color: hsla(62, 94%, 21%, 1.0);
+  cursor: pointer;
   display: block;
   font-weight: 600;
   height: 2.5em;
@@ -459,6 +463,10 @@ footer {
   font-size: .75em;
   line-height: 200%;
   padding: 1em .75em;
+}
+
+footer a {
+  color: hsla(255, 100%, 100%, 1.0);
 }
 
 ul.footer {

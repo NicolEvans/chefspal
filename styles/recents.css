@@ -35,13 +35,15 @@ li.search {
   width: auto;
 }
 
-p.search {
+input.search {
+  border-bottom: 0;
   color: hsla(0, 0%, 40%, 1.0);
   font-size: .75em;
-  padding: .45em 1em;
+  margin: .35em 1em;
 }
 
 div.account-dropdown {
+  cursor: pointer;
   display: inline-block;
   grid-column-start: 8;
   position: relative;
@@ -92,6 +94,10 @@ ul.topbottom {
 li.topbottom {
   display: inline;
   padding: 0 1em;
+}
+
+.topbottom a {
+  color: hsla(206, 56%, 20%, 1.0);
 }
 
 .main-nav {
